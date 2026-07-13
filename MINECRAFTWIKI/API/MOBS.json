@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Creeper",
+    "category": "NPC",
+    "type": "Hostil",
+    "health": "20",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/creeper_spawn_egg.png",
+    "description": "Un mob silencioso de color verde que se acerca sigilosamente al jugador y explota, causando un gran daño tanto a los jugadores como a los bloques cercanos."
+  },
+  {
+    "id": 2,
+    "name": "Enderman",
+    "category": "NPC",
+    "type": "Neutral",
+    "health": "40",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/enderman_spawn_egg.png",
+    "description": "Una criatura alta y oscura de patas largas. Se teletransporta y se vuelve agresiva si el jugador la mira directamente a los ojos."
+  },
+  {
+    "id": 3,
+    "name": "Aldeano",
+    "category": "NPC",
+    "type": "Pasivo",
+    "health": "20",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/villager_spawn_egg.png",
+    "description": "Habitante pacífico de las aldeas. Los jugadores pueden interactuar con ellos para intercambiar objetos como esmeraldas y herramientas."
+  },
+  {
+    "id": 4,
+    "name": "Zombie",
+    "category": "NPC",
+    "type": "Hostil",
+    "health": "20",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/zombie_spawn_egg.png",
+    "description": "Un muerto viviente muy común que ataca cuerpo a cuerpo. Se quema cuando entra en contacto con la luz del sol directamente."
+  },
+  {
+    "id": 5,
+    "name": "Gato",
+    "category": "NPC",
+    "type": "Pasivo",
+    "health": "10",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/cat_spawn_egg.png",
+    "description": "Felino que se encuentra merodeando por las aldeas. Pueden domesticarse con pescado crudo y ahuyentan a los Creepers."
+  },
+  {
+    "id": 6,
+    "name": "Espada de Diamante",
+    "category": "Item",
+    "type": "Arma",
+    "health": "1561 usos",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/diamond_sword.png",
+    "description": "Un arma cuerpo a cuerpo duradera y muy poderosa. Ideal para combatir a los monstruos de la noche y jefes."
+  },
+  {
+    "id": 7,
+    "name": "Manzana Dorada",
+    "category": "Item",
+    "type": "Comida",
+    "health": "Restaura 4",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/golden_apple.png",
+    "description": "Un alimento raro que proporciona los efectos de Absorción I y Regeneración II. Muy útil en batallas difíciles."
+  },
+  {
+    "id": 8,
+    "name": "Pico de Hierro",
+    "category": "Item",
+    "type": "Herramienta",
+    "health": "250 usos",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/iron_pickaxe.png",
+    "description": "Herramienta esencial para la minería. Puede picar menas importantes como oro, diamante, redstone y esmeraldas."
+  },
+  {
+    "id": 9,
+    "name": "Arco",
+    "category": "Item",
+    "type": "Arma",
+    "health": "384 usos",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/bow.png",
+    "description": "Arma a distancia que dispara flechas. El daño depende de cuánto tiempo se tense la cuerda."
+  },
+  {
+    "id": 10,
+    "name": "Escudo",
+    "category": "Item",
+    "type": "Defensa",
+    "health": "336 usos",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/shield.png",
+    "description": "Objeto que se equipa en la mano secundaria. Permite bloquear ataques cuerpo a cuerpo y desviar proyectiles como flechas."
+  },
+  {
+    "id": 11,
+    "name": "Bloque de Hierro",
+    "category": "Bloque",
+    "type": "Decoración/Utilidad",
+    "health": "Dureza 5.0",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/block/iron_block.png",
+    "description": "Bloque compacto creado con 9 lingotes de hierro. Sirve para almacenar hierro y es parte de la receta para crear un Gólem de Hierro."
+  },
+  {
+    "id": 12,
+    "name": "Obsidiana",
+    "category": "Bloque",
+    "type": "Construcción",
+    "health": "Dureza 50.0",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/block/obsidian.png",
+    "description": "Un bloque extremadamente resistente que se forma cuando el agua toca lava estática. Es esencial para construir un portal al Nether."
+  },
+  {
+    "id": 13,
+    "name": "Tierra (Dirt)",
+    "category": "Bloque",
+    "type": "Terreno",
+    "health": "Dureza 0.5",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/block/dirt.png",
+    "description": "Uno de los bloques más abundantes del mundo de Minecraft. Sirve para cultivar y dar forma básica al terreno."
+  },
+  {
+    "id": 14,
+    "name": "Mesa de Trabajo",
+    "category": "Bloque",
+    "type": "Utilidad",
+    "health": "Dureza 2.5",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/block/crafting_table_top.png",
+    "description": "El bloque más fundamental para la progresión en el juego. Permite acceder a una cuadrícula de creación de 3x3."
+  },
+  {
+    "id": 15,
+    "name": "Horno",
+    "category": "Bloque",
+    "type": "Utilidad",
+    "health": "Dureza 3.5",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/block/furnace_front.png",
+    "description": "Se utiliza para cocinar comida, fundir menas de minerales y procesar otros materiales usando algún combustible (como carbón o madera)."
+  },
+  {
+    "id": 16,
+    "name": "Esqueleto",
+    "category": "NPC",
+    "type": "Hostil",
+    "health": "20",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/skeleton_spawn_egg.png",
+    "description": "Un enemigo no muerto que ataca a distancia disparando flechas con su arco."
+  },
+  {
+    "id": 17,
+    "name": "Araña",
+    "category": "NPC",
+    "type": "Neutral (Día) / Hostil (Noche)",
+    "health": "16",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/spider_spawn_egg.png",
+    "description": "Puede escalar paredes y saltar largas distancias. Suelta hilo de araña y ojos al ser derrotada."
+  },
+  {
+    "id": 18,
+    "name": "Poción de Curación",
+    "category": "Item",
+    "type": "Poción",
+    "health": "Restaura 4 instantáneo",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/potion.png",
+    "description": "Restaura vida de forma inmediata al jugador cuando la bebe. También daña a los monstruos no muertos."
+  },
+  {
+    "id": 19,
+    "name": "Perla de Ender",
+    "category": "Item",
+    "type": "Utilidad",
+    "health": "1 uso (Causa 5 daño)",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/ender_pearl.png",
+    "description": "Lanzada por un Enderman al morir. Al tirarla, el jugador se teletransportará hacia donde caiga la perla."
+  },
+  {
+    "id": 20,
+    "name": "Cama",
+    "category": "Bloque",
+    "type": "Utilidad",
+    "health": "Dureza 0.2",
+    "image": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19.4/assets/minecraft/textures/item/red_bed.png",
+    "description": "Permite al jugador dormir para pasar la noche y establece el punto de regeneración (spawn) en el mundo."
+  }
+]
