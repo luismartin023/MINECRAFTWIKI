@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -33,31 +34,67 @@ namespace MINECRAFTWIKI.SERVICES
 
         public async Task<List<MinecraftEntity>> GetEntitiesAsync()
         {
+            var entities = await LoadRemoteAsync();
+
+            // Si el JSON remoto no responde o viene vacío, usamos la copia local
+            if (entities.Count == 0)
+            {
+                entities = await LoadLocalAsync();
+            }
+
+            ApplyImageFixes(entities);
+            return entities;
+        }
+
+        private async Task<List<MinecraftEntity>> LoadRemoteAsync()
+        {
             try
             {
                 var response = await _httpClient.GetStringAsync(_apiUrl);
-                var options = new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                };
-
-                var entities = JsonSerializer.Deserialize<List<MinecraftEntity>>(response, options) ?? new List<MinecraftEntity>();
-
-                // Reemplazamos las imágenes rotas con las de nuestro diccionario
-                foreach (var entity in entities)
-                {
-                    if (_imageFixes.ContainsKey(entity.Name))
-                    {
-                        entity.Image = _imageFixes[entity.Name];
-                    }
-                }
-
-                return entities;
+                return Deserialize(response);
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Error al consumir la API: {ex.Message}");
                 return new List<MinecraftEntity>();
+            }
+        }
+
+        // Respaldo: el catálogo local se copia a la salida como API/MOBS.json
+        private async Task<List<MinecraftEntity>> LoadLocalAsync()
+        {
+            try
+            {
+                var path = Path.Combine(AppContext.BaseDirectory, "API", "MOBS.json");
+                return File.Exists(path)
+                    ? Deserialize(await File.ReadAllTextAsync(path))
+                    : new List<MinecraftEntity>();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error al leer el catálogo local: {ex.Message}");
+                return new List<MinecraftEntity>();
+            }
+        }
+
+        private static List<MinecraftEntity> Deserialize(string json)
+        {
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            return JsonSerializer.Deserialize<List<MinecraftEntity>>(json, options) ?? new List<MinecraftEntity>();
+        }
+
+        // Reemplazamos las imágenes rotas con las de nuestro diccionario
+        private void ApplyImageFixes(List<MinecraftEntity> entities)
+        {
+            foreach (var entity in entities)
+            {
+                if (_imageFixes.ContainsKey(entity.Name))
+                {
+                    entity.Image = _imageFixes[entity.Name];
+                }
             }
         }
     }
