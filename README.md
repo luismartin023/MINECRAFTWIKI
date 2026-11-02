@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="MINECRAFTWIKI/Assets/logo.png" width="400" alt="MINECRAFTWIKI"/>
+![MINECRAFTWIKI](MINECRAFTWIKI/Assets/logo-banner.png)
 
 # MINECRAFTWIKI
 
